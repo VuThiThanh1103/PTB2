@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "GPT";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Phương trình bậc 2</h2>
+@using (Html.BeginForm())
+{
+    <label>Nhập vào hệ số  a: </label>
+    <input type="text" name="soa" />
+    <br />
+    <label>Nhập vào hệ số  b: </label>
+    <input type="text" name="sob" / >
+    <br />
+    <label>Nhập vào hệ số  c: </label>
+    <input type="text" name="soc" />
+    <br />
+    <input type="submit" value="Gửi" />
+}
+<br />
+<h3>Giá trị của phương trình là: </h3>
+<br />
+@ViewBag.thongbao
